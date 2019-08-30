@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_172959) do
+ActiveRecord::Schema.define(version: 2019_08_30_173622) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2019_08_29_172959) do
     t.string "button_two_action_css"
     t.string "button_three_action_css"
     t.string "button_four_action_css"
+    t.integer "lesson_number"
   end
 
   create_table "tracks", force: :cascade do |t|

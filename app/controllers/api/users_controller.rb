@@ -30,7 +30,7 @@ class Api::UsersController < ApplicationController
             @progress = @track.last
             render json: {progress: @progress}, status: :ok
         else
-            render json: {progress: null}, status: :rejected
+            render json: {progress: nil}, status: :rejected
         end
     end
 

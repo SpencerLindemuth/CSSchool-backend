@@ -1,5 +1,5 @@
 class Api::LessonsController < ApplicationController
-    skip_before_action :authorized, only: [:index]
+    skip_before_action :authorized, only: [:index, :create]
     def index
         @lessons = Lesson.all
         render json: @lessons
